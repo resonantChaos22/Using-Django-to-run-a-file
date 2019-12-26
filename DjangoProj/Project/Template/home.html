@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Python button script
+</title>
+</head>
+<body>
+
+<form action='{% url "weird" %}' method="post">
+{% csrf_token %}
+{{data_external}}
+{{data1}}
+<br><br>
+<input type="submit" value="Execute External Python Script">
+</form>
+</body>
+</html>
